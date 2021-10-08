@@ -3,12 +3,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Put Homebrew paths ahead of all the other paths.
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# Add mysql@5.7 to the path if present.
-mysql_path="$(brew --prefix)/opt/mysql@5.7/bin"
-if [ -d "$mysql_path" ]; then
-  export PATH=$PATH:$mysql_path
-fi
-
 # Fix terminal colours.
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
