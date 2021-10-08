@@ -1,0 +1,30 @@
+[user]
+	name = Lere Williams
+	email = lerebear@github.com
+
+[github]
+	user = lerebear
+	shelluser = lerebear
+
+[push]
+	default = simple
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[alias]
+	br = branch
+	co = checkout
+	cm = commit -m
+	cma = commit --amend
+	d = diff
+	dc = diff --cached
+	ds = diff --stat
+	prb = pull --rebase origin master
+	s = status
+	st = status
+	stl = stash list
+	stp = stash show -p
+	undo = reset --soft HEAD^
