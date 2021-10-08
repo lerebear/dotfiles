@@ -18,7 +18,7 @@ parse_git_branch() {
 }
 
 # Modify the prompt.
-#PS1='\u@\h \w$(parse_git_branch)> '
+PS1='\u@\h \w$(parse_git_branch)> '
 
 # Enable pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
