@@ -4,8 +4,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Fix terminal colours.
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Add colours to grep.
 export GREP_OPTIONS='--color=auto'
