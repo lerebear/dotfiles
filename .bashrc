@@ -10,8 +10,11 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Add colours to grep.
 export GREP_OPTIONS='--color=auto'
 
-# Enable bash autocompletion for Git.
+# Enable bash autocompletion for Git...
+# ... on Mac
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+# ... on Linux
+[[ -r "/usr/share/bash-completion/completions/git" ]] && . "/usr/share/bash-completion/completions/git"
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
