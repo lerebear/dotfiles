@@ -33,4 +33,4 @@
 	undo = reset --soft HEAD^
 
 [includeIf "gitdir:**/workspaces/**/.git"]
-    path = ~/.gitconfig-codespaces
+    path = ~/.gitconfig-gh-codespace
