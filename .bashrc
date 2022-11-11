@@ -16,6 +16,9 @@ export GREP_OPTIONS='--color=auto'
 # ... on Linux
 [[ -r "/usr/share/bash-completion/completions/git" ]] && . "/usr/share/bash-completion/completions/git"
 
+# Disable IRB autocomplete
+echo 'IRB.conf[:USE_AUTOCOMPLETE] = false' >> ~/.irbrc
+
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
