@@ -21,7 +21,7 @@
 	br = branch
 	co = checkout
 	cm = commit -m
-	cma = commit --amend
+	cma = commit --amend --no-edit
 	d = diff
 	dc = diff --cached
 	ds = diff --stat
