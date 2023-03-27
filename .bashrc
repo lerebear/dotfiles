@@ -3,10 +3,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Put Homebrew paths ahead of all the other paths.
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# Fix terminal colours.
-# export CLICOLOR=1
-# export LSCOLORS=GxFxCxDxBxegedabagaced
-
 # Add colours to grep.
 export GREP_OPTIONS='--color=auto'
 
