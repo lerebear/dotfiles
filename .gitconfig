@@ -31,6 +31,3 @@
 	stl = stash list
 	stp = stash show -p
 	undo = reset --soft HEAD^
-
-[includeIf "gitdir:**/workspaces/**/.git"]
-    path = ~/.gitconfig-gh-codespace
