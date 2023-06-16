@@ -74,8 +74,8 @@ alias gplrm='git pull --rebase origin master'
 # Custom functions
 #-----------------
 
-draft () {
-  open "$(git remote get-url --push origin | awk -F '\\.git' '{print $1}')/pull/new/$(git rev-parse --abbrev-ref HEAD)"
+ghpr () {
+  gh pr create -w --assignee @me
 }
 
 dbmigrate() {
