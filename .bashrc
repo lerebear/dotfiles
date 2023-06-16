@@ -78,14 +78,6 @@ ghpr () {
   gh pr create -w --assignee @me
 }
 
-dbmigrate() {
-  bin/rake db:migrate db:test:prepare
-}
-
-dbrollback() {
-  bin/rake db:rollback
-}
-
 prune() {
   for branch in "$@"; do git br -D "$branch" && git push origin :"$branch"; done
 }
