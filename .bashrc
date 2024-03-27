@@ -75,7 +75,7 @@ alias gplrm='git pull --rebase origin master'
 #-----------------
 
 ghpr () {
-  gh pr create -w --assignee @me
+  gh pr create -w --assignee @me "$@"
 }
 
 prune() {
